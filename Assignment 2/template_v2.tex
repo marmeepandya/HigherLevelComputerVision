@@ -1,0 +1,71 @@
+\documentclass{article}
+
+\usepackage{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{tabularx}
+
+\usepackage{fancyhdr}
+\lhead{Your Name\\HLCV 2025}
+\rhead{\today\\Assignment X}
+\thispagestyle{fancy}
+
+\setlength{\parindent}{0pt}
+\setlength{\headheight}{1em}
+
+\begin{document}
+
+\section{Part 1}
+\subsection{Task A}
+
+\lipsum[1-3]
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{graf.png}
+    \caption{Insightful caption.}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Task B}
+\label{sec:task-b}
+
+\lipsum[1-3]
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c}
+        \toprule
+        Col 1 & Col 2 \\
+        \midrule
+        $1$ & $2$ \\
+        \midrule
+        $3 $& $4$ \\
+        \bottomrule
+    \end{tabular}
+    \caption{Insightful caption.}
+    \label{tab:placeholder}
+\end{table}
+
+\clearpage
+
+\begin{center}
+  \textbf{Declaration of Used AI Tools} \\[.3em]
+  \begin{tabularx}{\textwidth}{lXlc}
+    \toprule
+    Tool & Purpose & Where? & Useful? \\
+    \midrule
+    ChatGPT & Rephrasing & Throughout & + \\
+    DeepL & Translation & Throughout & + \\
+    ResearchGPT & Summarization of related work & Sec.~\ref{sec:task-b} & - \\
+    Dall-E & Image generation & Figs.~2, 3 & ++ \\
+    GPT-4 & Code generation & functions.py & + \\
+    ChatGPT & Related work hallucination & Most of bibliography & ++ \\
+    \bottomrule
+  \end{tabularx}
+\end{center}
+
+\end{document}
